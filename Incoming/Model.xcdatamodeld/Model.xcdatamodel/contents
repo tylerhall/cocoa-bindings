@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="Hashtag" representedClassName="Hashtag" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="search" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Search" inverseName="hashtags" inverseEntity="Search" syncable="YES"/>
+    </entity>
+    <entity name="Link" representedClassName="Link" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="search" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Search" inverseName="links" inverseEntity="Search" syncable="YES"/>
+    </entity>
+    <entity name="Search" representedClassName="Search" syncable="YES">
+        <attribute name="guid" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="query" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hashtags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hashtag" inverseName="search" inverseEntity="Hashtag" syncable="YES"/>
+        <relationship name="links" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="search" inverseEntity="Link" syncable="YES"/>
+        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tweet" inverseName="search" inverseEntity="Tweet" syncable="YES"/>
+    </entity>
+    <entity name="Tweet" representedClassName="Tweet" syncable="YES">
+        <attribute name="dateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="search" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Search" inverseName="tweets" inverseEntity="Search" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tweets" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="followers" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="following" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="listed" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="updates" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tweet" inverseName="user" inverseEntity="Tweet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Link" positionX="-182" positionY="-261" width="128" height="88"/>
+        <element name="Search" positionX="-432" positionY="-171" width="128" height="118"/>
+        <element name="Tweet" positionX="-461" positionY="65" width="128" height="118"/>
+        <element name="User" positionX="-227" positionY="5" width="128" height="148"/>
+        <element name="Hashtag" positionX="-684" positionY="-223" width="128" height="88"/>
+    </elements>
+</model>

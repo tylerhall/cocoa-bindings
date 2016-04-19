@@ -1,0 +1,1350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012AC0962E649021A0E55DE484DC384B /* NSError+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6EB521701FA33EAFA13C479ACDD751 /* NSError+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01BAFD5A3A504931A5B233CE77C74C39 /* MagicalRecordXcode7CompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F1D164E660B976277AC6A0963680D8 /* MagicalRecordXcode7CompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01D310E2DAC58192E209FFA896339578 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EB16A973D7F6F0A0CF35774416D9CD /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		065D05CF911BBC39445071817AC98347 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD3FDE9182E8A52A87027F575A3704C /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06A4D26C8620B1A3C874AD935E3D5939 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EDDCFB58D907A0006A338737F67F5 /* NSManagedObjectContext+MagicalRecord.m */; };
+		0B56AFB97B17380D5488B2AA9D93BC48 /* STTwitterOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 7529174AE8251482EBBB485A4FECC8A7 /* STTwitterOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B570DE4FB41EE8963514154DE380813 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 245C17BA34B9463B71E496FF37A30F9D /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DB6572DEADAB92228E9FDB374A61693 /* STTwitterOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1209E9AA6C83D683420037658F12F137 /* STTwitterOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0F514C78FB46E4B77E8DC429F32D8D40 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB41E92FA907533DB44C0070B3E05E37 /* MagicalImportFunctions.m */; };
+		0FDC92DD370B285150E8C817973E5607 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4950818C0BE8F0A46F7F0AAE80A7BB03 /* NSString+MagicalDataImport.m */; };
+		12D81544B504091EEBE14BB68DD7A17C /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 1972C7F1BFA3728BC2BCB9778AE4F740 /* NSManagedObject+MagicalFinders.m */; };
+		147132EB8ECC0C9A2997455B4875B27A /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D1F02D16A3C34580A9342776A28FE7 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14F422921D36511C70B0C3230CFB1706 /* STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1066472D7ED0D2D28BEC24FE0EC0F047 /* STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F03F001EB014C0850D1909E99A8ED9 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 633C0F6166CBA5024BF6065C996D3F3F /* MagicalRecord+ErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		180E29B891BA20F2359DF1E745AD2B76 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = C152B26F0FEEE6C93D85A0A580B8FDCD /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18F640A1276A40DE266B6FE22E622238 /* JSONSyntaxHighlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 664184617F843040E392BE3CCBACF361 /* JSONSyntaxHighlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19AF93642DD633E0C5C77863BD128843 /* STHTTPRequest+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 873BFA914148AA79570E2616D0FEE020 /* STHTTPRequest+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B854600A1DC64047BB7E7B3E2C8602E /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD6A4C02744B8B61547865A3A908865 /* NSManagedObject+MagicalDataImport.m */; };
+		23A6EBFC4F827F3A311C1C8065D6E4B5 /* STTwitterAppOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BCFEB7C9D7A5E45341A1C5CBA7036 /* STTwitterAppOnly.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		24FCBB9B9A04DC30C96B60B547374E0E /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B545AE87E251B0CAA55C2CA8026853C /* NSManagedObjectContext+MagicalChainSave.m */; };
+		253B2C9C8FC9042E95A22EFAF56A0FED /* STTwitterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CBE6E7AF45B29CD2DD3647109AB7033 /* STTwitterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2625C2737668D0742F6169F38F3C8780 /* CDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FD29912122C178BEE4EAE33956ADAF /* CDEvent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A8E823E8DAA3A4866E9B18F26DA9306 /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE85591E08840CCC1FF298923061941 /* NSManagedObject+MagicalAggregation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B5AEB1F5ECB37AE4ACC9EBEECA46A26 /* STTwitter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C76EB795751F5D3BA7BB3E3A05A1B /* STTwitter-dummy.m */; };
+		2BCB0C33A9B73DB823B6BC099FEF189C /* STHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C0C9EA6DF9A2EBF2E23B0007B01FFB /* STHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C0E1B2717D5394E78AD7114040BF551 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 478D925DD8D498A1AD724AE776EFA9B3 /* AFURLSessionManager.m */; };
+		2F5DB1026D9B296A0AD56A6F1D2AC557 /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CE52F2CD486292C904C3E5B87D04C8 /* NSAttributeDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30130D73D255B3B39842E14547D61F35 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B5A088AFF0DEEAC716EC9505AF80AF /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F80FA7A924B5F7C8861D5EC6C5F80A /* CDEventsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 885F4E4741EAA497C25FE1EDE8118A31 /* CDEventsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32F8906923E7E859D2FFA949AA107EF6 /* STTwitterStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1884AFC7F9B061BC82CE5C03A78DEC /* STTwitterStreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33C10AF2567D4FBA0C0AFC20B6B75DF9 /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ACDE9215448F8CD8BD4DC90F632206 /* STHTTPRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3455BE0F9A1389D9FEEDFB3753DC6404 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D8D8E52055CC144953A7AEBFAC37F /* AFURLRequestSerialization.m */; };
+		35426F15F44DB891D0E1C74A0653C10B /* CDEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F57BCD96942F50FD2223C118140B273 /* CDEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A6AF2A98780AE2AA1D4D752D47FAABC /* STTwitterOSRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA38F6A85C9D7F2119BECE6228E1803F /* STTwitterOSRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BA5D00ABB3F39A21F29F2E94F125BDB /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4656B2E5AE224C8D4AAD41637FDABF51 /* NSManagedObject+MagicalRecord.m */; };
+		41B1887B83020F9BC422058BDF4435E1 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2707CB7E6E3C8AC613A4D10901D5D0 /* NSNumber+MagicalDataImport.m */; };
+		454CA8010FDB5FE895E10D6095383841 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE8B0CBA520B34E94D3B3F8C9D6632 /* NSManagedObject+MagicalAggregation.m */; };
+		4A675A2B2176CB71CB4A531DFC3F1933 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8704C170E689DE225A39EE02B712A3 /* NSManagedObject+MagicalRequests.m */; };
+		4BB80FAF34FCCED1EA4E6004267FD9D1 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 203FEB0340AFE0DF2D051CA09F1F78AA /* MagicalRecord+Options.m */; };
+		4CD3642B812E501998987D3455C4508C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A6B8104162713269EB7E8EC6A4EDA776 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DEED8D32AF14729F4B1A944D55A7009 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4340A0B93BCE96EB444660E6FBC113F2 /* NSRelationshipDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		503437F9985748C4CE533F93BB940EED /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3BA14FE846664BA4C8FA27F455FBB /* NSManagedObjectContext+MagicalThreading.m */; };
+		51893C9C163C835A682BE085FF5EB894 /* STTwitterOSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFD5E6D1A9FBAB10670DCB7D602E9F0 /* STTwitterOSRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5452579DAF7BC5841C31618099076882 /* STTwitterRequestProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D9B94C97D99901114CC30BFDFC8BCF /* STTwitterRequestProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B8E6D5B487508D715BDC40931BA27B /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9348295E82BC507ACDC28011FDF289 /* MagicalRecord+Setup.m */; };
+		5684A49221F3F7D8A8A38FEE90BA872B /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E6CF5A38A4E528872EB8CADDA8BE7D /* MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5733E16583839E53518DB7E28500E388 /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E898B92DE263FC95BA5122B9E2902 /* NSDateFormatter+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5A6626E0F201AF921FF2231BEA87B09F /* Pods-Incoming-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C270FDF4B53E3FB5171B5A0DDDC4156B /* Pods-Incoming-dummy.m */; };
+		5B31914C39DD676CE3430BBBF24824AC /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E65049F8AE017B47D164F589C36F0385 /* MagicalRecordDeprecationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D63E20A979566C48273D9E5255447C8 /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = F787DF8ED79E6C9927177F1A63CF8370 /* NSManagedObject+MagicalFinders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D80F38FE134068100B4FEA26DA7B44C /* STTwitterStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A9C863F361FEDE2302C5A1E996803F /* STTwitterStreamParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5E8D1F83DF686205CFBB870FAB8F83AC /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E64FCD06D37683BEFEDB7B11D2218B2 /* STHTTPRequest+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5F058B2A998A25E07351EC7B96B5B01F /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D4BEEA4D640F44573A28A3C0AF9699 /* NSManagedObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		602A5BF96993F4A1C5FC0C9D1DFCA0D9 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF9E32F3A060881DAF7C200AB2DDC11 /* NSPersistentStore+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		603DCE16DFE6A3FEEAFDA0BE1516FB0D /* STTwitterHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62A8C237F7966A1D15BC0CAED82E4A /* STTwitterHTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		607E909A1FE0E95FBB7B2E7099262A47 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC673D03F46A912ECD6CAC810E6C90EE /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D556AF5F5489A513413FA646916E5D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6828B6F24952590F21191E3AC5912BBF /* CoreServices.framework */; };
+		63546D964677C4E7EC00983BBC1E0A15 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EE764FBEFFD19A9BEAD7A315275B5 /* Cocoa.framework */; };
+		64C409418BB76F1B8DCF87DDF1C016CD /* NSString+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3246603FFF9716418F0455A6B954270C /* NSString+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65EEA459A3F67510A21F99A1E1891DD7 /* STTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 029E258CA80EF887285764B1A51F45F4 /* STTwitterAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6ABD2C8756D5E1185F32E404B5D4CE66 /* STTwitterOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FD6E6133BD93DE43C1767B79AC723 /* STTwitterOS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6B8119F347DB4A4B1997F6792A4B5B0C /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BB99E334FF696D6989B1E694F5D0F0 /* NSManagedObject+MagicalRequests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C00828EAFD0C752BA7E3C3644251249 /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B50A72D66F93F92003097598B6984 /* JSONSyntaxHighlight.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6C9407666C080F46F51979D061C124A0 /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = 1945CAF997D9E5CB5DC7F77F23FF5DF5 /* NSManagedObjectContext+MagicalSaves.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DB34DD3AC87911EA77ED54915AE7665 /* STTwitterOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B4554E28BBC7DE4C1B0126B1E346D9C2 /* STTwitterOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7076E109D72304F120894843B46398F2 /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C94B3D2DD152901E7FA270BA456DA8E /* MagicalImportFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		744BDA42C38330C1E88ECA1FECBFE660 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C25AEA195AB3256CC94EAB513E22E7F4 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74F9995C8AC369F3F04A20102C3494C3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B2BAEF8A625A705ED18A6C562A5DCD /* CoreData.framework */; };
+		765534EEAEF03F1E493AF8D5A0FE337B /* CDEvents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0ABF60F62B06DB2D0BE8F3846B7F41 /* CDEvents-dummy.m */; };
+		78554DB500DE6BB3C775533127298367 /* NSDateFormatter+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8B6217C769E81D5AD50BCE68C6172F /* NSDateFormatter+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A8522B82AE8F85E1D97623FE844BA70 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7B3C68DFAA3433572EDE7C9E5175F5 /* compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A8697E5208177132BC374CF4CE0DB18 /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 33753BF757CBF15D0479A29324526656 /* NSManagedObjectContext+MagicalThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA58739CA331CD3D72C93253F7BF845 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6828B6F24952590F21191E3AC5912BBF /* CoreServices.framework */; };
+		836F301F519FA638939BC9182EE58B23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EE764FBEFFD19A9BEAD7A315275B5 /* Cocoa.framework */; };
+		8396CB5D6172F0536109191068752B62 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF18A94198F7DDF75C43F5252532D64 /* NSPersistentStore+MagicalRecord.m */; };
+		83DD8AF980EE3CF413DDED978EF89F40 /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F69307A04BB4B99B9AC52A554AFDF4 /* NSManagedObject+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1E4F7F3DAFEC509E880C8BF5914685 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F88972130CC49A6C61D682B8871EAA /* NSManagedObjectModel+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EB8B776CBF6F4151F03097F35DCB63E /* BAVPlistNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B582E90E1650378BEFAE70601CB9A7 /* BAVPlistNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F377EF0B7A53F1F4E732E1CF0553D2E /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B84657F1310CC81AE6324E3401944C8 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924196CA2A9639F14F934E70677515C6 /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD02C87B61D3105C5410F02E79EF366 /* BAVPlistNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		943B0E841BCF6F8764BDE61E88B6384D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3414227E3DBF30B4EA7FD5A80D9C9B2C /* AFNetworkReachabilityManager.m */; };
+		9642CCA633D0B074DBF61ECD8EABEF20 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2152D30BAEA616609BC2AB8659A459E4 /* MagicalRecordInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99EF147B74D24F35E15D0E969F3AFBA7 /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 2198AF18E693FBD5D495409A3A52936B /* NSManagedObjectContext+MagicalChainSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2E2EDA9FF91DED9FC1197BE69A13844 /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = D68A5228C6C6B52AB526057CFF9A351F /* NSEntityDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3C03D25F1E09497B4D0D99198C6EDB0 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 947FB661E9B3089B8C2B253F79BD927B /* NSEntityDescription+MagicalDataImport.m */; };
+		A997DEBBAFD316D9C6C6256E6AAD57B5 /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B69F6611CB8EBAD1BF0426DD327DD62 /* NSError+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AEE9A30AE27F735C016C1052B8037D87 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF5FFF81D2E2B6D900F24FAB6544E1C /* AFNetworking-dummy.m */; };
+		B12B1AF86093EFE4733E87F510DB84AF /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7CBDE8B94C0421B8D2A55007195B66 /* NSManagedObjectContext+MagicalSaves.m */; };
+		B4C69CC0299A059B78D9DCAA196B327E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EE764FBEFFD19A9BEAD7A315275B5 /* Cocoa.framework */; };
+		B8BA9CCE7C2B9D181C1FCC5991594757 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C894FFB45A7C6C959AF2E089FC04C /* MagicalRecord+iCloud.m */; };
+		C081D07C9BFC7943094F462F26B639AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EE764FBEFFD19A9BEAD7A315275B5 /* Cocoa.framework */; };
+		C1E8D34A4F0EDEA261A46497D444228B /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BD9B8AE99F3B60FAC0EB7A3680AA63 /* NSString+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C7225BD91D67910CCA5DBF62A641208C /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832DC0A9B447E3ADD225C84F479914D /* NSRelationshipDescription+MagicalDataImport.m */; };
+		C82CE9375756BD215AAF4CF1BE7522DF /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = B428BCC4BDBD802E29CF9749280F46E8 /* NSManagedObjectContext+MagicalObserving.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB8ADEA4F62DD66212CFE27EC1E1B412 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4DA0454D20071226F759A3729C957B /* NSObject+MagicalDataImport.m */; };
+		CBAB0B0CDFF8A4B276850AF1681CDF5F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3967B352EEFF3610E950B98A9960640B /* SystemConfiguration.framework */; };
+		CC749AC3BA2B4D4B0F1400CF3CCBDEE0 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 700FFED5D9413A566A90EC04E77C7F6D /* AFSecurityPolicy.m */; };
+		CDB1D6D80039C0A064983A8CE5EF516E /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CAF6DCEEF755F7C22A62E7B151146 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		D09FC839D1ECAEBEDC2104713801AFB7 /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = B21A3E918966ECD0DF6C030F6F6FD74E /* NSManagedObjectContext+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1FCBDAE67B87D168E93C82143E7B574 /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0E88259128A4878BF627257C95DCBF /* NSNumber+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D253AFA70796C022EB7E2F373EA1B465 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D0CF3DAA31056ABBB7B7FAB32D1B2 /* MagicalRecordInternal.m */; };
+		D43288DE15B97A4F15AAFA5B492CD855 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B6EAF5E37CB8685B8633568F32F34A /* MagicalRecord+Actions.m */; };
+		D5F0AD3D72B3AA0354DFB01ADB8E3F6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EE764FBEFFD19A9BEAD7A315275B5 /* Cocoa.framework */; };
+		DB8D6BABE5069CFDC22A75EB9E325FB5 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ECF0770CDC17A927A6A989E21EFCD /* MagicalRecord+ErrorHandling.m */; };
+		DB918F24C2FEF4BF10CFC439E456E802 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E747A9E0A851BFA53B4E791A6F758174 /* NSManagedObjectModel+MagicalRecord.m */; };
+		DD29878FFE3668D2FD8E91EFDA01E0B0 /* CDEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8680798A368D221899A28F091DE498 /* CDEvents.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DE7CB3D6699093B521F3FC516F43644C /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 072F8604A46223EF8B84FADDFA86DFB5 /* MagicalRecord+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12D44876B5F3CF1922AF5DBCDC15CC7 /* STTwitterAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BA38168008DCFA47F614B516029BEB /* STTwitterAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12E2A6B55AD18368522C3EA79D8E998 /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 106059286420EF0AE7BB346659DB0DB9 /* NSObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E46B8EFAAD6D5F7CF9B09EB06BD7496B /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = 2453BAA5B4BF031008612F52B702423E /* MagicalRecord+Options.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E59C8B202FF5AA019462F682E1779E1D /* STTwitterHTML.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7F9FF8F6D7330FB4E0901D47F3B888 /* STTwitterHTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E92C079135F1FE7134FDDBFA32CFF0A7 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE65D14F4EA47F3F4568D27CC3D76EC /* MagicalRecord+Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED7FB53BCB4AB521F06C1B757EA270A0 /* CDEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 413979058F70A24BA1CFF2001C3572E8 /* CDEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED94AB4EE1CCEBDFCA0B924DC61C700C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA2097CBED35753440A12B7942A68B /* Security.framework */; };
+		EED4D75C88BE775C747FEB866A070A96 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 81984DDD8391ABB9827F1D7B07962B3A /* AFURLResponseSerialization.m */; };
+		F2972C1C4391A8DAC690E66338E768D3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD5255E1ED2D34EDD6A2F0EB9A7628 /* AFHTTPSessionManager.m */; };
+		F4D3A0F1B90F6DBC189294AD06DF9E43 /* STTwitterAppOnly.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DC54EA09FFAE752E37D79D0CABDB0F /* STTwitterAppOnly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F76CF62B507F28FE96AAE9C15BC87955 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = DCFD5DDFAEF567F58C571104694B71AD /* MagicalRecord+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9913CD88631EC2F3747484527439371 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C50932366BE707DF78EAFE255DECF2 /* NSManagedObjectContext+MagicalObserving.m */; };
+		F9A02E8724718E66B61C06C4140C3713 /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 18632EFB42FB85B3C19FDD19A8BD65CD /* MagicalRecord+ShorthandMethods.m */; };
+		FB3B2CB56F99F06081D2C1E9788ADC1E /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = B069AAC14E4473216FF832CEA1718AB6 /* MagicalRecord+ShorthandMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB9E135707483737B2509DFA10868212 /* MagicalRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF3090D08ED87BAA133A1A7478DE1A4 /* MagicalRecord-dummy.m */; };
+		FDE7B323829C52FE96BE691BFCBCD2FE /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CA97A86F74227A5A7ABA111D6D9987 /* NSAttributeDescription+MagicalDataImport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2178860108CC0FF9E359E38407333EA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54AB3ECEB9A8FBA15D4F73CBE326692;
+			remoteInfo = MagicalRecord;
+		};
+		5969FDC51A428B259317C6D63C629634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CD54B521C05F64664B50B361E42A34;
+			remoteInfo = AFNetworking;
+		};
+		7152E464555B74F952FD9816A3D9C7BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD733B9C503878A184B8C189B503E610;
+			remoteInfo = CDEvents;
+		};
+		754177891890B74964CFDADE103A6A12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6AAC3720CC86901F00F48BA59DD0D5;
+			remoteInfo = STTwitter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005B5EA16E9FC3F307F7CBF5AF5DAE3B /* CDEvents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDEvents-prefix.pch"; sourceTree = "<group>"; };
+		029E258CA80EF887285764B1A51F45F4 /* STTwitterAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAPI.m; path = STTwitter/STTwitterAPI.m; sourceTree = "<group>"; };
+		02B5A088AFF0DEEAC716EC9505AF80AF /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
+		072F8604A46223EF8B84FADDFA86DFB5 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = "<group>"; };
+		0832DC0A9B447E3ADD225C84F479914D /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		0C8704C170E689DE225A39EE02B712A3 /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
+		106059286420EF0AE7BB346659DB0DB9 /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		1066472D7ED0D2D28BEC24FE0EC0F047 /* STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitter.h; path = STTwitter/STTwitter.h; sourceTree = "<group>"; };
+		11D9B94C97D99901114CC30BFDFC8BCF /* STTwitterRequestProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterRequestProtocol.h; path = STTwitter/STTwitterRequestProtocol.h; sourceTree = "<group>"; };
+		1209E9AA6C83D683420037658F12F137 /* STTwitterOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOAuth.m; path = STTwitter/STTwitterOAuth.m; sourceTree = "<group>"; };
+		137CD968E88661B5DE8D14DF8A81071A /* libCDEvents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDEvents.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A9C863F361FEDE2302C5A1E996803F /* STTwitterStreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterStreamParser.m; path = STTwitter/STTwitterStreamParser.m; sourceTree = "<group>"; };
+		18632EFB42FB85B3C19FDD19A8BD65CD /* MagicalRecord+ShorthandMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandMethods.m"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.m"; sourceTree = "<group>"; };
+		1945CAF997D9E5CB5DC7F77F23FF5DF5 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
+		1972C7F1BFA3728BC2BCB9778AE4F740 /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
+		1B69F6611CB8EBAD1BF0426DD327DD62 /* NSError+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+STTwitter.m"; path = "STTwitter/NSError+STTwitter.m"; sourceTree = "<group>"; };
+		1C94B3D2DD152901E7FA270BA456DA8E /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = "<group>"; };
+		1CBE6E7AF45B29CD2DD3647109AB7033 /* STTwitterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterProtocol.h; path = STTwitter/STTwitterProtocol.h; sourceTree = "<group>"; };
+		1F1884AFC7F9B061BC82CE5C03A78DEC /* STTwitterStreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterStreamParser.h; path = STTwitter/STTwitterStreamParser.h; sourceTree = "<group>"; };
+		203FEB0340AFE0DF2D051CA09F1F78AA /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = "<group>"; };
+		2152D30BAEA616609BC2AB8659A459E4 /* MagicalRecordInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordInternal.h; path = MagicalRecord/Core/MagicalRecordInternal.h; sourceTree = "<group>"; };
+		2198AF18E693FBD5D495409A3A52936B /* NSManagedObjectContext+MagicalChainSave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalChainSave.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"; sourceTree = "<group>"; };
+		2453BAA5B4BF031008612F52B702423E /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = "<group>"; };
+		245C17BA34B9463B71E496FF37A30F9D /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		261CAF6DCEEF755F7C22A62E7B151146 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
+		27DA2097CBED35753440A12B7942A68B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2A1B50A72D66F93F92003097598B6984 /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONSyntaxHighlight.m; path = STTwitter/Vendor/JSONSyntaxHighlight.m; sourceTree = "<group>"; };
+		2B545AE87E251B0CAA55C2CA8026853C /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
+		2BF9E32F3A060881DAF7C200AB2DDC11 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
+		2CBD5255E1ED2D34EDD6A2F0EB9A7628 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		2FE3BA14FE846664BA4C8FA27F455FBB /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
+		3246603FFF9716418F0455A6B954270C /* NSString+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+STTwitter.h"; path = "STTwitter/NSString+STTwitter.h"; sourceTree = "<group>"; };
+		32D1F02D16A3C34580A9342776A28FE7 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		33753BF757CBF15D0479A29324526656 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
+		3414227E3DBF30B4EA7FD5A80D9C9B2C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		378D8D8E52055CC144953A7AEBFAC37F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		38AE45245CFE45791C31E554F5357398 /* CDEvents.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDEvents.xcconfig; sourceTree = "<group>"; };
+		391EDDCFB58D907A0006A338737F67F5 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
+		3967B352EEFF3610E950B98A9960640B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		3A0ABF60F62B06DB2D0BE8F3846B7F41 /* CDEvents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDEvents-dummy.m"; sourceTree = "<group>"; };
+		3F57BCD96942F50FD2223C118140B273 /* CDEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDEvent.h; sourceTree = "<group>"; };
+		3F6078AFF0DE5EBE21FCE0446267B8E3 /* libSTTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTTwitter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8B6217C769E81D5AD50BCE68C6172F /* NSDateFormatter+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+STTwitter.h"; path = "STTwitter/NSDateFormatter+STTwitter.h"; sourceTree = "<group>"; };
+		413979058F70A24BA1CFF2001C3572E8 /* CDEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDEvents.h; sourceTree = "<group>"; };
+		415FD6E6133BD93DE43C1767B79AC723 /* STTwitterOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOS.m; path = STTwitter/STTwitterOS.m; sourceTree = "<group>"; };
+		4340A0B93BCE96EB444660E6FBC113F2 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		44ACDE9215448F8CD8BD4DC90F632206 /* STHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STHTTPRequest.m; path = STTwitter/Vendor/STHTTPRequest.m; sourceTree = "<group>"; };
+		4656B2E5AE224C8D4AAD41637FDABF51 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
+		478D925DD8D498A1AD724AE776EFA9B3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		4950818C0BE8F0A46F7F0AAE80A7BB03 /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
+		4D4C894FFB45A7C6C959AF2E089FC04C /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		4DF92F8C5DB2CF091A42623682899ED6 /* Pods-Incoming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Incoming.debug.xcconfig"; sourceTree = "<group>"; };
+		50B582E90E1650378BEFAE70601CB9A7 /* BAVPlistNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAVPlistNode.h; path = STTwitter/Vendor/BAVPlistNode.h; sourceTree = "<group>"; };
+		52CE52F2CD486292C904C3E5B87D04C8 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		54BB99E334FF696D6989B1E694F5D0F0 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
+		59B2BAEF8A625A705ED18A6C562A5DCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		5A9348295E82BC507ACDC28011FDF289 /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
+		5C4BCFEB7C9D7A5E45341A1C5CBA7036 /* STTwitterAppOnly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAppOnly.m; path = STTwitter/STTwitterAppOnly.m; sourceTree = "<group>"; };
+		5D327DA1ABC0362BD97EC1FBB8AEB9D7 /* libPods-Incoming.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Incoming.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8680798A368D221899A28F091DE498 /* CDEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDEvents.m; sourceTree = "<group>"; };
+		5FD02C87B61D3105C5410F02E79EF366 /* BAVPlistNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAVPlistNode.m; path = STTwitter/Vendor/BAVPlistNode.m; sourceTree = "<group>"; };
+		602D0CF3DAA31056ABBB7B7FAB32D1B2 /* MagicalRecordInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordInternal.m; path = MagicalRecord/Core/MagicalRecordInternal.m; sourceTree = "<group>"; };
+		61DD3F348B2A1EB95F2545F7CC82CAC2 /* Pods-Incoming-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Incoming-resources.sh"; sourceTree = "<group>"; };
+		633C0F6166CBA5024BF6065C996D3F3F /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
+		636FB1B8893B6D3F5C910972DC9A50BE /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-Mac/HockeySDK.framework"; sourceTree = "<group>"; };
+		659EE764FBEFFD19A9BEAD7A315275B5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		664184617F843040E392BE3CCBACF361 /* JSONSyntaxHighlight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONSyntaxHighlight.h; path = STTwitter/Vendor/JSONSyntaxHighlight.h; sourceTree = "<group>"; };
+		6828B6F24952590F21191E3AC5912BBF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		68EB16A973D7F6F0A0CF35774416D9CD /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		6C0E88259128A4878BF627257C95DCBF /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
+		6FF5FFF81D2E2B6D900F24FAB6544E1C /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		700FFED5D9413A566A90EC04E77C7F6D /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		737CA52B0D8E20A94366FB1521F74042 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		741B47260D418F2C8EBE1E5611D45664 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		7529174AE8251482EBBB485A4FECC8A7 /* STTwitterOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOAuth.h; path = STTwitter/STTwitterOAuth.h; sourceTree = "<group>"; };
+		77F1D164E660B976277AC6A0963680D8 /* MagicalRecordXcode7CompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordXcode7CompatibilityMacros.h; path = MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h; sourceTree = "<group>"; };
+		78978D978C2D78E117A84EF07EC45450 /* Pods-Incoming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Incoming.release.xcconfig"; sourceTree = "<group>"; };
+		7B84657F1310CC81AE6324E3401944C8 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		7E64FCD06D37683BEFEDB7B11D2218B2 /* STHTTPRequest+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "STHTTPRequest+STTwitter.m"; path = "STTwitter/STHTTPRequest+STTwitter.m"; sourceTree = "<group>"; };
+		80B4989DBAA75A14CCA6FB860E1207F1 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81984DDD8391ABB9827F1D7B07962B3A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		824C76EB795751F5D3BA7BB3E3A05A1B /* STTwitter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STTwitter-dummy.m"; sourceTree = "<group>"; };
+		84C50932366BE707DF78EAFE255DECF2 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
+		85C0C9EA6DF9A2EBF2E23B0007B01FFB /* STHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STHTTPRequest.h; path = STTwitter/Vendor/STHTTPRequest.h; sourceTree = "<group>"; };
+		873BFA914148AA79570E2616D0FEE020 /* STHTTPRequest+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STHTTPRequest+STTwitter.h"; path = "STTwitter/STHTTPRequest+STTwitter.h"; sourceTree = "<group>"; };
+		87E6CF5A38A4E528872EB8CADDA8BE7D /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord.h; sourceTree = "<group>"; };
+		885F4E4741EAA497C25FE1EDE8118A31 /* CDEventsDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDEventsDelegate.h; sourceTree = "<group>"; };
+		8D8ECF0770CDC17A927A6A989E21EFCD /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
+		8F7E898B92DE263FC95BA5122B9E2902 /* NSDateFormatter+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+STTwitter.m"; path = "STTwitter/NSDateFormatter+STTwitter.m"; sourceTree = "<group>"; };
+		90900BEA0C4529509FA9B129DD7EAEC9 /* Pods-Incoming-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Incoming-frameworks.sh"; sourceTree = "<group>"; };
+		930B0DEAB7E5713E469A64FC472447B1 /* STTwitter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTwitter-prefix.pch"; sourceTree = "<group>"; };
+		947FB661E9B3089B8C2B253F79BD927B /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		98F88972130CC49A6C61D682B8871EAA /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		9B2707CB7E6E3C8AC613A4D10901D5D0 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
+		9FF18A94198F7DDF75C43F5252532D64 /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		A0D4BEEA4D640F44573A28A3C0AF9699 /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A6B8104162713269EB7E8EC6A4EDA776 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		A6CA97A86F74227A5A7ABA111D6D9987 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A8D2B26C15466A189F3232436D40E9EC /* Pods-Incoming-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Incoming-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA38F6A85C9D7F2119BECE6228E1803F /* STTwitterOSRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOSRequest.h; path = STTwitter/STTwitterOSRequest.h; sourceTree = "<group>"; };
+		ABE65D14F4EA47F3F4568D27CC3D76EC /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
+		AEF3090D08ED87BAA133A1A7478DE1A4 /* MagicalRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord-dummy.m"; sourceTree = "<group>"; };
+		B069AAC14E4473216FF832CEA1718AB6 /* MagicalRecord+ShorthandMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandMethods.h"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"; sourceTree = "<group>"; };
+		B0FD29912122C178BEE4EAE33956ADAF /* CDEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDEvent.m; sourceTree = "<group>"; };
+		B21A3E918966ECD0DF6C030F6F6FD74E /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		B428BCC4BDBD802E29CF9749280F46E8 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
+		B4554E28BBC7DE4C1B0126B1E346D9C2 /* STTwitterOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOS.h; path = STTwitter/STTwitterOS.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAFD5E6D1A9FBAB10670DCB7D602E9F0 /* STTwitterOSRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOSRequest.m; path = STTwitter/STTwitterOSRequest.m; sourceTree = "<group>"; };
+		BB41E92FA907533DB44C0070B3E05E37 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = "<group>"; };
+		BE6EB521701FA33EAFA13C479ACDD751 /* NSError+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+STTwitter.h"; path = "STTwitter/NSError+STTwitter.h"; sourceTree = "<group>"; };
+		BECE8B0CBA520B34E94D3B3F8C9D6632 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
+		C075E09DCA3DBCC9E8FDD9B8CCF40156 /* STTwitter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STTwitter.xcconfig; sourceTree = "<group>"; };
+		C152B26F0FEEE6C93D85A0A580B8FDCD /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
+		C25AEA195AB3256CC94EAB513E22E7F4 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		C270FDF4B53E3FB5171B5A0DDDC4156B /* Pods-Incoming-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Incoming-dummy.m"; sourceTree = "<group>"; };
+		CB7CBDE8B94C0421B8D2A55007195B66 /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
+		CBEB10591A62D2E43A2B278AF7B9BFFE /* Pods-Incoming-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Incoming-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC673D03F46A912ECD6CAC810E6C90EE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CFD6A4C02744B8B61547865A3A908865 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		D1B6EAF5E37CB8685B8633568F32F34A /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
+		D2BD9B8AE99F3B60FAC0EB7A3680AA63 /* NSString+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+STTwitter.m"; path = "STTwitter/NSString+STTwitter.m"; sourceTree = "<group>"; };
+		D4D55E4959532A0CF4992AC6BC0741A4 /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68A5228C6C6B52AB526057CFF9A351F /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		DA7F9FF8F6D7330FB4E0901D47F3B888 /* STTwitterHTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterHTML.h; path = STTwitter/STTwitterHTML.h; sourceTree = "<group>"; };
+		DBD9128A84D428ADAF6F3473083F9205 /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
+		DCFD5DDFAEF567F58C571104694B71AD /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
+		DF4DA0454D20071226F759A3729C957B /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		E1F69307A04BB4B99B9AC52A554AFDF4 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		E65049F8AE017B47D164F589C36F0385 /* MagicalRecordDeprecationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordDeprecationMacros.h; path = MagicalRecord/Core/MagicalRecordDeprecationMacros.h; sourceTree = "<group>"; };
+		E747A9E0A851BFA53B4E791A6F758174 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		ECD3FDE9182E8A52A87027F575A3704C /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
+		EE7B3C68DFAA3433572EDE7C9E5175F5 /* compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
+		EFE133F5E0D7B4407A5014C66F9CC15C /* MagicalRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicalRecord.xcconfig; sourceTree = "<group>"; };
+		F2DC54EA09FFAE752E37D79D0CABDB0F /* STTwitterAppOnly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAppOnly.h; path = STTwitter/STTwitterAppOnly.h; sourceTree = "<group>"; };
+		F3C0EE0C18F04C58428325F7D28C1D93 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		F787DF8ED79E6C9927177F1A63CF8370 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
+		F7BA38168008DCFA47F614B516029BEB /* STTwitterAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAPI.h; path = STTwitter/STTwitterAPI.h; sourceTree = "<group>"; };
+		FBE85591E08840CCC1FF298923061941 /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
+		FE62A8C237F7966A1D15BC0CAED82E4A /* STTwitterHTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterHTML.m; path = STTwitter/STTwitterHTML.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FB12D2F8E885EEC60520541F839D94A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C081D07C9BFC7943094F462F26B639AC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E112542A23457388865BD3C4529BFF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63546D964677C4E7EC00983BBC1E0A15 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B550EA12C166400B63E74BE77E1D984B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836F301F519FA638939BC9182EE58B23 /* Cocoa.framework in Frameworks */,
+				7DA58739CA331CD3D72C93253F7BF845 /* CoreServices.framework in Frameworks */,
+				ED94AB4EE1CCEBDFCA0B924DC61C700C /* Security.framework in Frameworks */,
+				CBAB0B0CDFF8A4B276850AF1681CDF5F /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89E7D7E203086AEAD98A23ADDD041CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F0AD3D72B3AA0354DFB01ADB8E3F6F /* Cocoa.framework in Frameworks */,
+				74F9995C8AC369F3F04A20102C3494C3 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2A1EC2DF193CF4919D8BE2ABF9406F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C69CC0299A059B78D9DCAA196B327E /* Cocoa.framework in Frameworks */,
+				62D556AF5F5489A513413FA646916E5D /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0712630D6E976FB3AF704BC1853A2C55 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				245C17BA34B9463B71E496FF37A30F9D /* AFSecurityPolicy.h */,
+				700FFED5D9413A566A90EC04E77C7F6D /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		0ABF7B943CE29EFC633B9481E5B9B937 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CC673D03F46A912ECD6CAC810E6C90EE /* AFNetworkReachabilityManager.h */,
+				3414227E3DBF30B4EA7FD5A80D9C9B2C /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		10702FFA3DFF3E37CF0D75FC002B766E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C841B1A2D5211CE0D0E48B754C272D2E /* Pods-Incoming */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		178A06EC2705B46FE1BB38A02AAC7BBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5BB3776430AEBFBADFC504D51ECBD15 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EE8449A1224802B9943EAE574BA468F /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				7B84657F1310CC81AE6324E3401944C8 /* AFURLRequestSerialization.h */,
+				378D8D8E52055CC144953A7AEBFAC37F /* AFURLRequestSerialization.m */,
+				68EB16A973D7F6F0A0CF35774416D9CD /* AFURLResponseSerialization.h */,
+				81984DDD8391ABB9827F1D7B07962B3A /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		1FC449FA11C3737984ABB77E2D7846C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				741B47260D418F2C8EBE1E5611D45664 /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25006EF308D0C1A64E9B04014C72D4B7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1C94B3D2DD152901E7FA270BA456DA8E /* MagicalImportFunctions.h */,
+				BB41E92FA907533DB44C0070B3E05E37 /* MagicalImportFunctions.m */,
+				87E6CF5A38A4E528872EB8CADDA8BE7D /* MagicalRecord.h */,
+				ABE65D14F4EA47F3F4568D27CC3D76EC /* MagicalRecord+Actions.h */,
+				D1B6EAF5E37CB8685B8633568F32F34A /* MagicalRecord+Actions.m */,
+				633C0F6166CBA5024BF6065C996D3F3F /* MagicalRecord+ErrorHandling.h */,
+				8D8ECF0770CDC17A927A6A989E21EFCD /* MagicalRecord+ErrorHandling.m */,
+				DCFD5DDFAEF567F58C571104694B71AD /* MagicalRecord+iCloud.h */,
+				4D4C894FFB45A7C6C959AF2E089FC04C /* MagicalRecord+iCloud.m */,
+				2453BAA5B4BF031008612F52B702423E /* MagicalRecord+Options.h */,
+				203FEB0340AFE0DF2D051CA09F1F78AA /* MagicalRecord+Options.m */,
+				072F8604A46223EF8B84FADDFA86DFB5 /* MagicalRecord+Setup.h */,
+				5A9348295E82BC507ACDC28011FDF289 /* MagicalRecord+Setup.m */,
+				B069AAC14E4473216FF832CEA1718AB6 /* MagicalRecord+ShorthandMethods.h */,
+				18632EFB42FB85B3C19FDD19A8BD65CD /* MagicalRecord+ShorthandMethods.m */,
+				E65049F8AE017B47D164F589C36F0385 /* MagicalRecordDeprecationMacros.h */,
+				2152D30BAEA616609BC2AB8659A459E4 /* MagicalRecordInternal.h */,
+				602D0CF3DAA31056ABBB7B7FAB32D1B2 /* MagicalRecordInternal.m */,
+				02B5A088AFF0DEEAC716EC9505AF80AF /* MagicalRecordLogging.h */,
+				77F1D164E660B976277AC6A0963680D8 /* MagicalRecordXcode7CompatibilityMacros.h */,
+				52CE52F2CD486292C904C3E5B87D04C8 /* NSAttributeDescription+MagicalDataImport.h */,
+				A6CA97A86F74227A5A7ABA111D6D9987 /* NSAttributeDescription+MagicalDataImport.m */,
+				D68A5228C6C6B52AB526057CFF9A351F /* NSEntityDescription+MagicalDataImport.h */,
+				947FB661E9B3089B8C2B253F79BD927B /* NSEntityDescription+MagicalDataImport.m */,
+				FBE85591E08840CCC1FF298923061941 /* NSManagedObject+MagicalAggregation.h */,
+				BECE8B0CBA520B34E94D3B3F8C9D6632 /* NSManagedObject+MagicalAggregation.m */,
+				A0D4BEEA4D640F44573A28A3C0AF9699 /* NSManagedObject+MagicalDataImport.h */,
+				CFD6A4C02744B8B61547865A3A908865 /* NSManagedObject+MagicalDataImport.m */,
+				F787DF8ED79E6C9927177F1A63CF8370 /* NSManagedObject+MagicalFinders.h */,
+				1972C7F1BFA3728BC2BCB9778AE4F740 /* NSManagedObject+MagicalFinders.m */,
+				E1F69307A04BB4B99B9AC52A554AFDF4 /* NSManagedObject+MagicalRecord.h */,
+				4656B2E5AE224C8D4AAD41637FDABF51 /* NSManagedObject+MagicalRecord.m */,
+				54BB99E334FF696D6989B1E694F5D0F0 /* NSManagedObject+MagicalRequests.h */,
+				0C8704C170E689DE225A39EE02B712A3 /* NSManagedObject+MagicalRequests.m */,
+				2198AF18E693FBD5D495409A3A52936B /* NSManagedObjectContext+MagicalChainSave.h */,
+				2B545AE87E251B0CAA55C2CA8026853C /* NSManagedObjectContext+MagicalChainSave.m */,
+				B428BCC4BDBD802E29CF9749280F46E8 /* NSManagedObjectContext+MagicalObserving.h */,
+				84C50932366BE707DF78EAFE255DECF2 /* NSManagedObjectContext+MagicalObserving.m */,
+				B21A3E918966ECD0DF6C030F6F6FD74E /* NSManagedObjectContext+MagicalRecord.h */,
+				391EDDCFB58D907A0006A338737F67F5 /* NSManagedObjectContext+MagicalRecord.m */,
+				1945CAF997D9E5CB5DC7F77F23FF5DF5 /* NSManagedObjectContext+MagicalSaves.h */,
+				CB7CBDE8B94C0421B8D2A55007195B66 /* NSManagedObjectContext+MagicalSaves.m */,
+				33753BF757CBF15D0479A29324526656 /* NSManagedObjectContext+MagicalThreading.h */,
+				2FE3BA14FE846664BA4C8FA27F455FBB /* NSManagedObjectContext+MagicalThreading.m */,
+				98F88972130CC49A6C61D682B8871EAA /* NSManagedObjectModel+MagicalRecord.h */,
+				E747A9E0A851BFA53B4E791A6F758174 /* NSManagedObjectModel+MagicalRecord.m */,
+				6C0E88259128A4878BF627257C95DCBF /* NSNumber+MagicalDataImport.h */,
+				9B2707CB7E6E3C8AC613A4D10901D5D0 /* NSNumber+MagicalDataImport.m */,
+				106059286420EF0AE7BB346659DB0DB9 /* NSObject+MagicalDataImport.h */,
+				DF4DA0454D20071226F759A3729C957B /* NSObject+MagicalDataImport.m */,
+				2BF9E32F3A060881DAF7C200AB2DDC11 /* NSPersistentStore+MagicalRecord.h */,
+				9FF18A94198F7DDF75C43F5252532D64 /* NSPersistentStore+MagicalRecord.m */,
+				ECD3FDE9182E8A52A87027F575A3704C /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				261CAF6DCEEF755F7C22A62E7B151146 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+				4340A0B93BCE96EB444660E6FBC113F2 /* NSRelationshipDescription+MagicalDataImport.h */,
+				0832DC0A9B447E3ADD225C84F479914D /* NSRelationshipDescription+MagicalDataImport.m */,
+				C152B26F0FEEE6C93D85A0A580B8FDCD /* NSString+MagicalDataImport.h */,
+				4950818C0BE8F0A46F7F0AAE80A7BB03 /* NSString+MagicalDataImport.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		382552764E6056435CD5C90BB087791B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFE133F5E0D7B4407A5014C66F9CC15C /* MagicalRecord.xcconfig */,
+				AEF3090D08ED87BAA133A1A7478DE1A4 /* MagicalRecord-dummy.m */,
+				DBD9128A84D428ADAF6F3473083F9205 /* MagicalRecord-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MagicalRecord";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				178A06EC2705B46FE1BB38A02AAC7BBC /* Frameworks */,
+				EED29D22E54B3813E67FA09BF1B97192 /* Pods */,
+				8EA26BF6075488AFA9B8035325BA116F /* Products */,
+				10702FFA3DFF3E37CF0D75FC002B766E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		857FF9E6F5A1C4970BF8B9ABB4ED8742 /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				25006EF308D0C1A64E9B04014C72D4B7 /* Core */,
+				382552764E6056435CD5C90BB087791B /* Support Files */,
+			);
+			path = MagicalRecord;
+			sourceTree = "<group>";
+		};
+		8AF9D5B31631C4FBFE869E1BD095CFB2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C075E09DCA3DBCC9E8FDD9B8CCF40156 /* STTwitter.xcconfig */,
+				824C76EB795751F5D3BA7BB3E3A05A1B /* STTwitter-dummy.m */,
+				930B0DEAB7E5713E469A64FC472447B1 /* STTwitter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/STTwitter";
+			sourceTree = "<group>";
+		};
+		8EA26BF6075488AFA9B8035325BA116F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80B4989DBAA75A14CCA6FB860E1207F1 /* libAFNetworking.a */,
+				137CD968E88661B5DE8D14DF8A81071A /* libCDEvents.a */,
+				D4D55E4959532A0CF4992AC6BC0741A4 /* libMagicalRecord.a */,
+				5D327DA1ABC0362BD97EC1FBB8AEB9D7 /* libPods-Incoming.a */,
+				3F6078AFF0DE5EBE21FCE0446267B8E3 /* libSTTwitter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9458D31A20C8B838A4AF27C856562535 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C25AEA195AB3256CC94EAB513E22E7F4 /* AFNetworking.h */,
+				BE831DA01DBFC4DA732D04E171D988D8 /* NSURLSession */,
+				0ABF7B943CE29EFC633B9481E5B9B937 /* Reachability */,
+				0712630D6E976FB3AF704BC1853A2C55 /* Security */,
+				1EE8449A1224802B9943EAE574BA468F /* Serialization */,
+				C91868C86F68C95BB559E43A446781B7 /* Support Files */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		994B6E5BBD76B15BC420E8EEF0A6BBAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9B984CB798B85F784401ACBA57DFA97C /* STTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				50B582E90E1650378BEFAE70601CB9A7 /* BAVPlistNode.h */,
+				5FD02C87B61D3105C5410F02E79EF366 /* BAVPlistNode.m */,
+				664184617F843040E392BE3CCBACF361 /* JSONSyntaxHighlight.h */,
+				2A1B50A72D66F93F92003097598B6984 /* JSONSyntaxHighlight.m */,
+				3F8B6217C769E81D5AD50BCE68C6172F /* NSDateFormatter+STTwitter.h */,
+				8F7E898B92DE263FC95BA5122B9E2902 /* NSDateFormatter+STTwitter.m */,
+				BE6EB521701FA33EAFA13C479ACDD751 /* NSError+STTwitter.h */,
+				1B69F6611CB8EBAD1BF0426DD327DD62 /* NSError+STTwitter.m */,
+				3246603FFF9716418F0455A6B954270C /* NSString+STTwitter.h */,
+				D2BD9B8AE99F3B60FAC0EB7A3680AA63 /* NSString+STTwitter.m */,
+				85C0C9EA6DF9A2EBF2E23B0007B01FFB /* STHTTPRequest.h */,
+				44ACDE9215448F8CD8BD4DC90F632206 /* STHTTPRequest.m */,
+				873BFA914148AA79570E2616D0FEE020 /* STHTTPRequest+STTwitter.h */,
+				7E64FCD06D37683BEFEDB7B11D2218B2 /* STHTTPRequest+STTwitter.m */,
+				1066472D7ED0D2D28BEC24FE0EC0F047 /* STTwitter.h */,
+				F7BA38168008DCFA47F614B516029BEB /* STTwitterAPI.h */,
+				029E258CA80EF887285764B1A51F45F4 /* STTwitterAPI.m */,
+				F2DC54EA09FFAE752E37D79D0CABDB0F /* STTwitterAppOnly.h */,
+				5C4BCFEB7C9D7A5E45341A1C5CBA7036 /* STTwitterAppOnly.m */,
+				DA7F9FF8F6D7330FB4E0901D47F3B888 /* STTwitterHTML.h */,
+				FE62A8C237F7966A1D15BC0CAED82E4A /* STTwitterHTML.m */,
+				7529174AE8251482EBBB485A4FECC8A7 /* STTwitterOAuth.h */,
+				1209E9AA6C83D683420037658F12F137 /* STTwitterOAuth.m */,
+				B4554E28BBC7DE4C1B0126B1E346D9C2 /* STTwitterOS.h */,
+				415FD6E6133BD93DE43C1767B79AC723 /* STTwitterOS.m */,
+				AA38F6A85C9D7F2119BECE6228E1803F /* STTwitterOSRequest.h */,
+				BAFD5E6D1A9FBAB10670DCB7D602E9F0 /* STTwitterOSRequest.m */,
+				1CBE6E7AF45B29CD2DD3647109AB7033 /* STTwitterProtocol.h */,
+				11D9B94C97D99901114CC30BFDFC8BCF /* STTwitterRequestProtocol.h */,
+				1F1884AFC7F9B061BC82CE5C03A78DEC /* STTwitterStreamParser.h */,
+				15A9C863F361FEDE2302C5A1E996803F /* STTwitterStreamParser.m */,
+				8AF9D5B31631C4FBFE869E1BD095CFB2 /* Support Files */,
+			);
+			path = STTwitter;
+			sourceTree = "<group>";
+		};
+		B043C87AF473164B0BE5A674733E97A0 /* HockeySDK-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				FEBE6E449C26208B11B4DE82FAA3888B /* Frameworks */,
+				994B6E5BBD76B15BC420E8EEF0A6BBAB /* Resources */,
+			);
+			path = "HockeySDK-Mac";
+			sourceTree = "<group>";
+		};
+		BE831DA01DBFC4DA732D04E171D988D8 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				32D1F02D16A3C34580A9342776A28FE7 /* AFHTTPSessionManager.h */,
+				2CBD5255E1ED2D34EDD6A2F0EB9A7628 /* AFHTTPSessionManager.m */,
+				A6B8104162713269EB7E8EC6A4EDA776 /* AFURLSessionManager.h */,
+				478D925DD8D498A1AD724AE776EFA9B3 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		C1CCEE654DAA83A373F69A61CD5FC3B8 /* CDEvents */ = {
+			isa = PBXGroup;
+			children = (
+				3F57BCD96942F50FD2223C118140B273 /* CDEvent.h */,
+				B0FD29912122C178BEE4EAE33956ADAF /* CDEvent.m */,
+				413979058F70A24BA1CFF2001C3572E8 /* CDEvents.h */,
+				5D8680798A368D221899A28F091DE498 /* CDEvents.m */,
+				885F4E4741EAA497C25FE1EDE8118A31 /* CDEventsDelegate.h */,
+				EE7B3C68DFAA3433572EDE7C9E5175F5 /* compat.h */,
+				C98F79188DA9791C6EB6FFCC6AC00380 /* Support Files */,
+			);
+			path = CDEvents;
+			sourceTree = "<group>";
+		};
+		C841B1A2D5211CE0D0E48B754C272D2E /* Pods-Incoming */ = {
+			isa = PBXGroup;
+			children = (
+				CBEB10591A62D2E43A2B278AF7B9BFFE /* Pods-Incoming-acknowledgements.markdown */,
+				A8D2B26C15466A189F3232436D40E9EC /* Pods-Incoming-acknowledgements.plist */,
+				C270FDF4B53E3FB5171B5A0DDDC4156B /* Pods-Incoming-dummy.m */,
+				90900BEA0C4529509FA9B129DD7EAEC9 /* Pods-Incoming-frameworks.sh */,
+				61DD3F348B2A1EB95F2545F7CC82CAC2 /* Pods-Incoming-resources.sh */,
+				4DF92F8C5DB2CF091A42623682899ED6 /* Pods-Incoming.debug.xcconfig */,
+				78978D978C2D78E117A84EF07EC45450 /* Pods-Incoming.release.xcconfig */,
+			);
+			name = "Pods-Incoming";
+			path = "Target Support Files/Pods-Incoming";
+			sourceTree = "<group>";
+		};
+		C91868C86F68C95BB559E43A446781B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3C0EE0C18F04C58428325F7D28C1D93 /* AFNetworking.xcconfig */,
+				6FF5FFF81D2E2B6D900F24FAB6544E1C /* AFNetworking-dummy.m */,
+				737CA52B0D8E20A94366FB1521F74042 /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		C98F79188DA9791C6EB6FFCC6AC00380 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38AE45245CFE45791C31E554F5357398 /* CDEvents.xcconfig */,
+				3A0ABF60F62B06DB2D0BE8F3846B7F41 /* CDEvents-dummy.m */,
+				005B5EA16E9FC3F307F7CBF5AF5DAE3B /* CDEvents-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CDEvents";
+			sourceTree = "<group>";
+		};
+		D5BB3776430AEBFBADFC504D51ECBD15 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				659EE764FBEFFD19A9BEAD7A315275B5 /* Cocoa.framework */,
+				59B2BAEF8A625A705ED18A6C562A5DCD /* CoreData.framework */,
+				6828B6F24952590F21191E3AC5912BBF /* CoreServices.framework */,
+				27DA2097CBED35753440A12B7942A68B /* Security.framework */,
+				3967B352EEFF3610E950B98A9960640B /* SystemConfiguration.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		E5F530D3357ADBF7CE96B2BD4570A104 /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				1FC449FA11C3737984ABB77E2D7846C6 /* Frameworks */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		EED29D22E54B3813E67FA09BF1B97192 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9458D31A20C8B838A4AF27C856562535 /* AFNetworking */,
+				C1CCEE654DAA83A373F69A61CD5FC3B8 /* CDEvents */,
+				B043C87AF473164B0BE5A674733E97A0 /* HockeySDK-Mac */,
+				857FF9E6F5A1C4970BF8B9ABB4ED8742 /* MagicalRecord */,
+				E5F530D3357ADBF7CE96B2BD4570A104 /* Sparkle */,
+				9B984CB798B85F784401ACBA57DFA97C /* STTwitter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEBE6E449C26208B11B4DE82FAA3888B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				636FB1B8893B6D3F5C910972DC9A50BE /* HockeySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4F5F9A1B52A44B728F146ADD32E3219C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB8B776CBF6F4151F03097F35DCB63E /* BAVPlistNode.h in Headers */,
+				18F640A1276A40DE266B6FE22E622238 /* JSONSyntaxHighlight.h in Headers */,
+				78554DB500DE6BB3C775533127298367 /* NSDateFormatter+STTwitter.h in Headers */,
+				012AC0962E649021A0E55DE484DC384B /* NSError+STTwitter.h in Headers */,
+				64C409418BB76F1B8DCF87DDF1C016CD /* NSString+STTwitter.h in Headers */,
+				19AF93642DD633E0C5C77863BD128843 /* STHTTPRequest+STTwitter.h in Headers */,
+				2BCB0C33A9B73DB823B6BC099FEF189C /* STHTTPRequest.h in Headers */,
+				14F422921D36511C70B0C3230CFB1706 /* STTwitter.h in Headers */,
+				E12D44876B5F3CF1922AF5DBCDC15CC7 /* STTwitterAPI.h in Headers */,
+				F4D3A0F1B90F6DBC189294AD06DF9E43 /* STTwitterAppOnly.h in Headers */,
+				E59C8B202FF5AA019462F682E1779E1D /* STTwitterHTML.h in Headers */,
+				0B56AFB97B17380D5488B2AA9D93BC48 /* STTwitterOAuth.h in Headers */,
+				6DB34DD3AC87911EA77ED54915AE7665 /* STTwitterOS.h in Headers */,
+				3A6AF2A98780AE2AA1D4D752D47FAABC /* STTwitterOSRequest.h in Headers */,
+				253B2C9C8FC9042E95A22EFAF56A0FED /* STTwitterProtocol.h in Headers */,
+				5452579DAF7BC5841C31618099076882 /* STTwitterRequestProtocol.h in Headers */,
+				32F8906923E7E859D2FFA949AA107EF6 /* STTwitterStreamParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41EE4477A8C31F557414CAD8AEDC039 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147132EB8ECC0C9A2997455B4875B27A /* AFHTTPSessionManager.h in Headers */,
+				744BDA42C38330C1E88ECA1FECBFE660 /* AFNetworking.h in Headers */,
+				607E909A1FE0E95FBB7B2E7099262A47 /* AFNetworkReachabilityManager.h in Headers */,
+				0B570DE4FB41EE8963514154DE380813 /* AFSecurityPolicy.h in Headers */,
+				8F377EF0B7A53F1F4E732E1CF0553D2E /* AFURLRequestSerialization.h in Headers */,
+				01D310E2DAC58192E209FFA896339578 /* AFURLResponseSerialization.h in Headers */,
+				4CD3642B812E501998987D3455C4508C /* AFURLSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A630E21A5BE48EBC56BEA4B5E0BA61F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35426F15F44DB891D0E1C74A0653C10B /* CDEvent.h in Headers */,
+				ED7FB53BCB4AB521F06C1B757EA270A0 /* CDEvents.h in Headers */,
+				31F80FA7A924B5F7C8861D5EC6C5F80A /* CDEventsDelegate.h in Headers */,
+				7A8522B82AE8F85E1D97623FE844BA70 /* compat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E021AC71F49A67DBABEA282AB1F2781A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7076E109D72304F120894843B46398F2 /* MagicalImportFunctions.h in Headers */,
+				E92C079135F1FE7134FDDBFA32CFF0A7 /* MagicalRecord+Actions.h in Headers */,
+				15F03F001EB014C0850D1909E99A8ED9 /* MagicalRecord+ErrorHandling.h in Headers */,
+				F76CF62B507F28FE96AAE9C15BC87955 /* MagicalRecord+iCloud.h in Headers */,
+				E46B8EFAAD6D5F7CF9B09EB06BD7496B /* MagicalRecord+Options.h in Headers */,
+				DE7CB3D6699093B521F3FC516F43644C /* MagicalRecord+Setup.h in Headers */,
+				FB3B2CB56F99F06081D2C1E9788ADC1E /* MagicalRecord+ShorthandMethods.h in Headers */,
+				5684A49221F3F7D8A8A38FEE90BA872B /* MagicalRecord.h in Headers */,
+				5B31914C39DD676CE3430BBBF24824AC /* MagicalRecordDeprecationMacros.h in Headers */,
+				9642CCA633D0B074DBF61ECD8EABEF20 /* MagicalRecordInternal.h in Headers */,
+				30130D73D255B3B39842E14547D61F35 /* MagicalRecordLogging.h in Headers */,
+				01BAFD5A3A504931A5B233CE77C74C39 /* MagicalRecordXcode7CompatibilityMacros.h in Headers */,
+				2F5DB1026D9B296A0AD56A6F1D2AC557 /* NSAttributeDescription+MagicalDataImport.h in Headers */,
+				A2E2EDA9FF91DED9FC1197BE69A13844 /* NSEntityDescription+MagicalDataImport.h in Headers */,
+				2A8E823E8DAA3A4866E9B18F26DA9306 /* NSManagedObject+MagicalAggregation.h in Headers */,
+				5F058B2A998A25E07351EC7B96B5B01F /* NSManagedObject+MagicalDataImport.h in Headers */,
+				5D63E20A979566C48273D9E5255447C8 /* NSManagedObject+MagicalFinders.h in Headers */,
+				83DD8AF980EE3CF413DDED978EF89F40 /* NSManagedObject+MagicalRecord.h in Headers */,
+				6B8119F347DB4A4B1997F6792A4B5B0C /* NSManagedObject+MagicalRequests.h in Headers */,
+				99EF147B74D24F35E15D0E969F3AFBA7 /* NSManagedObjectContext+MagicalChainSave.h in Headers */,
+				C82CE9375756BD215AAF4CF1BE7522DF /* NSManagedObjectContext+MagicalObserving.h in Headers */,
+				D09FC839D1ECAEBEDC2104713801AFB7 /* NSManagedObjectContext+MagicalRecord.h in Headers */,
+				6C9407666C080F46F51979D061C124A0 /* NSManagedObjectContext+MagicalSaves.h in Headers */,
+				7A8697E5208177132BC374CF4CE0DB18 /* NSManagedObjectContext+MagicalThreading.h in Headers */,
+				8C1E4F7F3DAFEC509E880C8BF5914685 /* NSManagedObjectModel+MagicalRecord.h in Headers */,
+				D1FCBDAE67B87D168E93C82143E7B574 /* NSNumber+MagicalDataImport.h in Headers */,
+				E12E2A6B55AD18368522C3EA79D8E998 /* NSObject+MagicalDataImport.h in Headers */,
+				602A5BF96993F4A1C5FC0C9D1DFCA0D9 /* NSPersistentStore+MagicalRecord.h in Headers */,
+				065D05CF911BBC39445071817AC98347 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */,
+				4DEED8D32AF14729F4B1A944D55A7009 /* NSRelationshipDescription+MagicalDataImport.h in Headers */,
+				180E29B891BA20F2359DF1E745AD2B76 /* NSString+MagicalDataImport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		62B059A4328D8783B767A5D1A6E7CE46 /* Pods-Incoming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA7577A35F2C4BAD9D2655685946E159 /* Build configuration list for PBXNativeTarget "Pods-Incoming" */;
+			buildPhases = (
+				ABE21ACED510BA00D75EF35FAAE67FAB /* Sources */,
+				6FB12D2F8E885EEC60520541F839D94A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63BDF6D8EF9C41A50506B24D3A811269 /* PBXTargetDependency */,
+				6E7072B4B15EF238B463153CA3DAA0E3 /* PBXTargetDependency */,
+				55B0D3BA98F15D5865091C565E8EE8F5 /* PBXTargetDependency */,
+				0BB34075EB7F5CE62487F28BDE00A7F7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Incoming";
+			productName = "Pods-Incoming";
+			productReference = 5D327DA1ABC0362BD97EC1FBB8AEB9D7 /* libPods-Incoming.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CD733B9C503878A184B8C189B503E610 /* CDEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C29BB59077249028CBC758D4D380DF /* Build configuration list for PBXNativeTarget "CDEvents" */;
+			buildPhases = (
+				5BA4A4806026E5F9ECABF996F4B8E008 /* Sources */,
+				BA2A1EC2DF193CF4919D8BE2ABF9406F /* Frameworks */,
+				A630E21A5BE48EBC56BEA4B5E0BA61F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDEvents;
+			productName = CDEvents;
+			productReference = 137CD968E88661B5DE8D14DF8A81071A /* libCDEvents.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D54AB3ECEB9A8FBA15D4F73CBE326692 /* MagicalRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A82A958F02B972797A1AA7A1D549C7CF /* Build configuration list for PBXNativeTarget "MagicalRecord" */;
+			buildPhases = (
+				36210F3CA5E3C65DECFE396841EDE840 /* Sources */,
+				B89E7D7E203086AEAD98A23ADDD041CB /* Frameworks */,
+				E021AC71F49A67DBABEA282AB1F2781A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicalRecord;
+			productName = MagicalRecord;
+			productReference = D4D55E4959532A0CF4992AC6BC0741A4 /* libMagicalRecord.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F1CD54B521C05F64664B50B361E42A34 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11319947230CC2946E2E04D50506BB0C /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				8C221D26D53B79E867555434CBB25319 /* Sources */,
+				B550EA12C166400B63E74BE77E1D984B /* Frameworks */,
+				A41EE4477A8C31F557414CAD8AEDC039 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 80B4989DBAA75A14CCA6FB860E1207F1 /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FD6AAC3720CC86901F00F48BA59DD0D5 /* STTwitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 387E8E3D8816B0CA734940E9AB1D5DA0 /* Build configuration list for PBXNativeTarget "STTwitter" */;
+			buildPhases = (
+				6FE28977EFFFE653B22FB140E7E4F1C6 /* Sources */,
+				7E112542A23457388865BD3C4529BFF9 /* Frameworks */,
+				4F5F9A1B52A44B728F146ADD32E3219C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STTwitter;
+			productName = STTwitter;
+			productReference = 3F6078AFF0DE5EBE21FCE0446267B8E3 /* libSTTwitter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8EA26BF6075488AFA9B8035325BA116F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1CD54B521C05F64664B50B361E42A34 /* AFNetworking */,
+				CD733B9C503878A184B8C189B503E610 /* CDEvents */,
+				D54AB3ECEB9A8FBA15D4F73CBE326692 /* MagicalRecord */,
+				62B059A4328D8783B767A5D1A6E7CE46 /* Pods-Incoming */,
+				FD6AAC3720CC86901F00F48BA59DD0D5 /* STTwitter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36210F3CA5E3C65DECFE396841EDE840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F514C78FB46E4B77E8DC429F32D8D40 /* MagicalImportFunctions.m in Sources */,
+				D43288DE15B97A4F15AAFA5B492CD855 /* MagicalRecord+Actions.m in Sources */,
+				DB8D6BABE5069CFDC22A75EB9E325FB5 /* MagicalRecord+ErrorHandling.m in Sources */,
+				B8BA9CCE7C2B9D181C1FCC5991594757 /* MagicalRecord+iCloud.m in Sources */,
+				4BB80FAF34FCCED1EA4E6004267FD9D1 /* MagicalRecord+Options.m in Sources */,
+				55B8E6D5B487508D715BDC40931BA27B /* MagicalRecord+Setup.m in Sources */,
+				F9A02E8724718E66B61C06C4140C3713 /* MagicalRecord+ShorthandMethods.m in Sources */,
+				FB9E135707483737B2509DFA10868212 /* MagicalRecord-dummy.m in Sources */,
+				D253AFA70796C022EB7E2F373EA1B465 /* MagicalRecordInternal.m in Sources */,
+				FDE7B323829C52FE96BE691BFCBCD2FE /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				A3C03D25F1E09497B4D0D99198C6EDB0 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				454CA8010FDB5FE895E10D6095383841 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				1B854600A1DC64047BB7E7B3E2C8602E /* NSManagedObject+MagicalDataImport.m in Sources */,
+				12D81544B504091EEBE14BB68DD7A17C /* NSManagedObject+MagicalFinders.m in Sources */,
+				3BA5D00ABB3F39A21F29F2E94F125BDB /* NSManagedObject+MagicalRecord.m in Sources */,
+				4A675A2B2176CB71CB4A531DFC3F1933 /* NSManagedObject+MagicalRequests.m in Sources */,
+				24FCBB9B9A04DC30C96B60B547374E0E /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
+				F9913CD88631EC2F3747484527439371 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				06A4D26C8620B1A3C874AD935E3D5939 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				B12B1AF86093EFE4733E87F510DB84AF /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				503437F9985748C4CE533F93BB940EED /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				DB918F24C2FEF4BF10CFC439E456E802 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				41B1887B83020F9BC422058BDF4435E1 /* NSNumber+MagicalDataImport.m in Sources */,
+				CB8ADEA4F62DD66212CFE27EC1E1B412 /* NSObject+MagicalDataImport.m in Sources */,
+				8396CB5D6172F0536109191068752B62 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				CDB1D6D80039C0A064983A8CE5EF516E /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				C7225BD91D67910CCA5DBF62A641208C /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				0FDC92DD370B285150E8C817973E5607 /* NSString+MagicalDataImport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA4A4806026E5F9ECABF996F4B8E008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2625C2737668D0742F6169F38F3C8780 /* CDEvent.m in Sources */,
+				765534EEAEF03F1E493AF8D5A0FE337B /* CDEvents-dummy.m in Sources */,
+				DD29878FFE3668D2FD8E91EFDA01E0B0 /* CDEvents.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE28977EFFFE653B22FB140E7E4F1C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924196CA2A9639F14F934E70677515C6 /* BAVPlistNode.m in Sources */,
+				6C00828EAFD0C752BA7E3C3644251249 /* JSONSyntaxHighlight.m in Sources */,
+				5733E16583839E53518DB7E28500E388 /* NSDateFormatter+STTwitter.m in Sources */,
+				A997DEBBAFD316D9C6C6256E6AAD57B5 /* NSError+STTwitter.m in Sources */,
+				C1E8D34A4F0EDEA261A46497D444228B /* NSString+STTwitter.m in Sources */,
+				5E8D1F83DF686205CFBB870FAB8F83AC /* STHTTPRequest+STTwitter.m in Sources */,
+				33C10AF2567D4FBA0C0AFC20B6B75DF9 /* STHTTPRequest.m in Sources */,
+				2B5AEB1F5ECB37AE4ACC9EBEECA46A26 /* STTwitter-dummy.m in Sources */,
+				65EEA459A3F67510A21F99A1E1891DD7 /* STTwitterAPI.m in Sources */,
+				23A6EBFC4F827F3A311C1C8065D6E4B5 /* STTwitterAppOnly.m in Sources */,
+				603DCE16DFE6A3FEEAFDA0BE1516FB0D /* STTwitterHTML.m in Sources */,
+				0DB6572DEADAB92228E9FDB374A61693 /* STTwitterOAuth.m in Sources */,
+				6ABD2C8756D5E1185F32E404B5D4CE66 /* STTwitterOS.m in Sources */,
+				51893C9C163C835A682BE085FF5EB894 /* STTwitterOSRequest.m in Sources */,
+				5D80F38FE134068100B4FEA26DA7B44C /* STTwitterStreamParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C221D26D53B79E867555434CBB25319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2972C1C4391A8DAC690E66338E768D3 /* AFHTTPSessionManager.m in Sources */,
+				AEE9A30AE27F735C016C1052B8037D87 /* AFNetworking-dummy.m in Sources */,
+				943B0E841BCF6F8764BDE61E88B6384D /* AFNetworkReachabilityManager.m in Sources */,
+				CC749AC3BA2B4D4B0F1400CF3CCBDEE0 /* AFSecurityPolicy.m in Sources */,
+				3455BE0F9A1389D9FEEDFB3753DC6404 /* AFURLRequestSerialization.m in Sources */,
+				EED4D75C88BE775C747FEB866A070A96 /* AFURLResponseSerialization.m in Sources */,
+				2C0E1B2717D5394E78AD7114040BF551 /* AFURLSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE21ACED510BA00D75EF35FAAE67FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6626E0F201AF921FF2231BEA87B09F /* Pods-Incoming-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB34075EB7F5CE62487F28BDE00A7F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STTwitter;
+			target = FD6AAC3720CC86901F00F48BA59DD0D5 /* STTwitter */;
+			targetProxy = 754177891890B74964CFDADE103A6A12 /* PBXContainerItemProxy */;
+		};
+		55B0D3BA98F15D5865091C565E8EE8F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MagicalRecord;
+			target = D54AB3ECEB9A8FBA15D4F73CBE326692 /* MagicalRecord */;
+			targetProxy = 2178860108CC0FF9E359E38407333EA6 /* PBXContainerItemProxy */;
+		};
+		63BDF6D8EF9C41A50506B24D3A811269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = F1CD54B521C05F64664B50B361E42A34 /* AFNetworking */;
+			targetProxy = 5969FDC51A428B259317C6D63C629634 /* PBXContainerItemProxy */;
+		};
+		6E7072B4B15EF238B463153CA3DAA0E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDEvents;
+			target = CD733B9C503878A184B8C189B503E610 /* CDEvents */;
+			targetProxy = 7152E464555B74F952FD9816A3D9C7BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D51A6F2AF04BB362563FCEB58117643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78978D978C2D78E117A84EF07EC45450 /* Pods-Incoming.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		10DAEB66F06C62B1BF4BC859518C2340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C0EE0C18F04C58428325F7D28C1D93 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1E621D6BF749EDCE77ACBE7C6D464E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		295908A56F126DBED9EA74468C7036B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C075E09DCA3DBCC9E8FDD9B8CCF40156 /* STTwitter.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/STTwitter/STTwitter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		546B016BE29E682E6734960EA9DB9677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C0EE0C18F04C58428325F7D28C1D93 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5577A3F22A37686E40DB6863D68D476C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		799ED1DDCAAD8C87F900A50EA77C4F32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AE45245CFE45791C31E554F5357398 /* CDEvents.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/CDEvents/CDEvents-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		982F7D971FF2E861B3F6990AFCD6A82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AE45245CFE45791C31E554F5357398 /* CDEvents.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/CDEvents/CDEvents-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE614ED175AFC311578BEE028CF1297F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C075E09DCA3DBCC9E8FDD9B8CCF40156 /* STTwitter.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/STTwitter/STTwitter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B495266302B13BBDF186DC794C578602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE133F5E0D7B4407A5014C66F9CC15C /* MagicalRecord.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CB5F7C33D04D17A8E13CA970E5AD91C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF92F8C5DB2CF091A42623682899ED6 /* Pods-Incoming.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F4EF92ACD886FA0F02E83C7750DCACCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE133F5E0D7B4407A5014C66F9CC15C /* MagicalRecord.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11319947230CC2946E2E04D50506BB0C /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DAEB66F06C62B1BF4BC859518C2340 /* Debug */,
+				546B016BE29E682E6734960EA9DB9677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E621D6BF749EDCE77ACBE7C6D464E29 /* Debug */,
+				5577A3F22A37686E40DB6863D68D476C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		387E8E3D8816B0CA734940E9AB1D5DA0 /* Build configuration list for PBXNativeTarget "STTwitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295908A56F126DBED9EA74468C7036B8 /* Debug */,
+				AE614ED175AFC311578BEE028CF1297F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A82A958F02B972797A1AA7A1D549C7CF /* Build configuration list for PBXNativeTarget "MagicalRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B495266302B13BBDF186DC794C578602 /* Debug */,
+				F4EF92ACD886FA0F02E83C7750DCACCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA7577A35F2C4BAD9D2655685946E159 /* Build configuration list for PBXNativeTarget "Pods-Incoming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5F7C33D04D17A8E13CA970E5AD91C9 /* Debug */,
+				0D51A6F2AF04BB362563FCEB58117643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C29BB59077249028CBC758D4D380DF /* Build configuration list for PBXNativeTarget "CDEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799ED1DDCAAD8C87F900A50EA77C4F32 /* Debug */,
+				982F7D971FF2E861B3F6990AFCD6A82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
